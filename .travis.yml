@@ -13,7 +13,7 @@ addons:
     - autotools-dev
     - build-essential
     - pkg-config
-    - libtool-bin
+    - libtool
     # Dependencies
     - libboost-all-dev
     - libeigen3-dev
