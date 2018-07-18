@@ -1,5 +1,7 @@
 language: cpp
 
+python: 3.6
+
 sudo: false
 
 addons:
@@ -7,7 +9,6 @@ addons:
     packages:
     # meson + ninja build system
     - ninja-build
-    - python3-pip
     - ccache
     # Toolchain for compiling dependencies
     - autotools-dev
@@ -19,7 +20,7 @@ addons:
     - libeigen3-dev
 
 before_install:
-- pip3 install --user meson
+- pip3.6 install --user meson
 
 install:
 - meson --wrap-mode=forcefallback src/builddir src
