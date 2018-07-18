@@ -12,7 +12,6 @@ addons:
     - ccache
     # Toolchain for compiling dependencies
     - autotools-dev
-    - build-essential
     - pkg-config
     - libtool
     # Dependencies
